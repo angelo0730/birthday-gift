@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffe0e0, #ffc6ec);
+    padding: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff4c8b;
+  }
+  
+  .message,
+  .footer {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .photo-frame {
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ffb6c1;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  button {
+    background-color: #ff4c8b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e63b74;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+  }
+  
+  .close-btn {
+    color: #aaa;
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover {
+    color: #ff4c8b;
+  }
+  
